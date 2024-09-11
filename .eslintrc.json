@@ -1,0 +1,8 @@
+{
+  "extends": "@lewebsimple/eslint-config",
+  "ignorePatterns": [
+    ".nuxt",
+    ".output",
+    "node_modules"
+  ]
+}
