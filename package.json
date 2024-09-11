@@ -9,8 +9,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint --fix . && stylelint --fix \"**/*.{css,scss,vue}\"",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "husky && nuxt prepare",
+    "preview": "nuxt preview"
   },
   "dependencies": {
     "nuxt": "^3.13.1",
@@ -21,7 +21,13 @@
     "@lewebsimple/eslint-config": "^0.9.6",
     "@lewebsimple/stylelint-config": "^0.9.6",
     "eslint": "^8.57.0",
+    "husky": "^9.1.5",
+    "nano-staged": "^0.8.0",
     "stylelint": "^16.9.0"
+  },
+  "nano-staged": {
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.{css,scss,vue}": "stylelint --fix"
   },
   "packageManager": "pnpm@9.10.0"
 }
