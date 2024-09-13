@@ -21,7 +21,7 @@
     "@lewebsimple/eslint-config": "^0.9.6",
     "@lewebsimple/stylelint-config": "^0.9.6",
     "eslint": "^8.57.0",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "nano-staged": "^0.8.0",
     "stylelint": "^16.9.0"
   },
